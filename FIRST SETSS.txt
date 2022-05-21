@@ -1,0 +1,75 @@
+program = { Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless , / , $, include}
+
+declaration-list = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}
+declaration-list` = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless,epsilon}
+
+
+declaration = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}###
+declaration`={;,(,/,$}###
+var-declaration = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}
+type-specifier = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless }
+fun-declaration = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}###
+
+fun-declaration`={(,/,$}###
+
+params = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless,epsilon}
+param-list = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}
+param-list` = { , , epsilon }
+param = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}
+
+compound-stmt = { { }
+compound-stmt` = {/ , $ , Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}
+
+local-declarations = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless}
+local-declarations` = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless , epsilon}
+
+statement-list = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop}
+
+statement-list` = { ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop, epsilon }
+statement = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop }
+
+expression-stmt = {ID , ; ,(,+,-,INT-NUM,FLOAT-NUM}
+
+selection-stmt = {if}
+selection-stmt`= {else , epsilon}
+
+iteration-stmt = {Iteratewhen , Loopwhen}
+Loop-statement = {Loopwhen}
+Iterate -statement = {Iteratewhen}
+jump-stmt = { Turnback , Stop}
+expression={( , ID , + , - ,  INT_NUM , FLOAT_NUM}###
+expression`={=,epsilon}###
+id-assign={ID}
+
+simple-expression = {( , ID , + , - ,  INT_NUM , FLOAT_NUM}
+simple-expression`= { <= , < , > , >= , == , != , && , || , epsilon }
+
+relop = {<= , < , > , >= , == , != , && , ||}
+
+additive-expression = { ( , ID , + , - ,  INT_NUM , FLOAT_NUM}
+additive-expression`= { + , - , epsilon}
+
+addop = {+ , -}
+
+term = { ( , ID , + , - ,  INT_NUM , FLOAT_NUM  }
+term`= {* , /, epsilon}
+
+mulop = {* , /}
+factor = { ( , ID , + , - ,  INT_NUM , FLOAT_NUM  }
+factor`={(,e}###
+call = {ID}
+
+args = {ID}
+arg-list = {( , ID , + , - ,  INT_NUM , FLOAT_NUM}
+arg-list`= {, , epsilon}
+
+num = { + , - ,  INT_NUM , FLOAT_NUM  }
+
+Unsigned num = {INT_NUM , FLOAT_NUM}
+Signed num ={+ , -}
+pos-num = {+}
+neg-num = {-}
+value = {INT_NUM , FLOAT_NUM}
+comment = {/ , $}
+include_command = {include}
+F_name = {STR}
