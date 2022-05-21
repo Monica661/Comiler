@@ -1,0 +1,74 @@
+FOLLOWWW SETSSS :
+
+program = {$}
+declaration-list = {$}
+declaration-list`= {$}
+declaration = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless,$}
+declaration`={Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless,$}
+var-declaration = {$,Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless} +++++LOCALL DECL.
+type-specifier = {ID}
+
+fun-declaration = N/A----------
+fun-declaration`=N/A-----------
+params = {)}
+param-list = {)}
+param-list`= {)}
+param = {, , )}
+
+###---compound-stmt = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+###---compound-stmt` = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+
+###---local-declarations = { ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop}
+###---local-declarations` = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop}
+
+###---statement-list ={ } }
+###---statement-list` = { } }
+
+###---statement = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else }
+###---expression-stmt = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+
+###---selection-stmt = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+###---selection-stmt`= {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+
+
+###---iteration-stmt = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+###---Loop-statement = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+###---Iterate -statement = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+###---jump-stmt = {ID , (,INT-NUM-FLOAT-NUM ,+,-,;,{,if,loopwhen,Iteratewhen,Turnback,Stop,} ,else}
+
+###---expression = {; , ) , , }
+###---expression`={; , ) , ,}
+###---id-assign = {= ,; , ) , ,}
+
+###---simple-expression = {; , ) , ,}
+###---simple-expression`= {; , ) , ,}
+
+###---relop = {( , ID , + , - ,  INT_NUM , FLOAT_NUM } 
+###----additive-expression = { <= , < , > , >= , == , != , && , || , ; , ) , ,}
+###----additive-expression`= { <= , < , > , >= , == , != , && , || , ; , ) , ,}
+
+###---addop = {( , ID , + , - ,  INT_NUM , FLOAT_NUM}
+###---term = {+ , - ,<= , < , > , >= , == , != , && , || , ; , ) , , }
+###---term`= {+ , - ,<= , < , > , >= , == , != , && , || , ; , ) , , }
+
+###---mulop = {( , ID , + , - ,  INT_NUM , FLOAT_NUM}
+
+###---factor = {* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , , }++++++FOLLOW TERM+ add. + simple
+###---factor`={* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , , }
+
+###---call = N/A
+
+###---args = {)}
+###---arg-list = {)}
+###---arg-list` = {)}
+
+###---num = {* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , , }
+###---Unsigned-num = {* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , ,}
+###---Signed-num = {* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , ,}
+###---pos-num = {* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , ,}
+###---neg-num = {* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , ,}
+###---value = {* , /,+ , - ,<= , < , > , >= , == , != , && , || ,; , ) , ,}
+###---comment = {Iow , SIow , Chlo , Chain , Iowf , SIowf , Worthless, $}
+###---include_command = {$}
+###---F_name = {.}
+
